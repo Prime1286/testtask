@@ -139,7 +139,7 @@
             order: 5;
   }
 }
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 420px) {
 section.one {
 flex-wrap: wrap;  
 } 

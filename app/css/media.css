@@ -38,6 +38,8 @@
             flex: calc(100% - 160px);
     max-width: calc(100% - 160px);
     margin-right: 10px;
+    line-height:1.5;
+    padding:20px;
   }
   .one__right {
     -webkit-box-flex: 150px;

@@ -1,0 +1,191 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+//common style
+html, body {
+font-family: sans-serif;    
+}
+.body-container {
+padding: 0 13px;
+width: 100%; 
+max-width: 768px; 
+margin: 0 auto;  
+background-color: $white;
+font-size: 100%;
+line-height: 1.2;
+    }
+img {max-width: 100%} 
+
+.square {   
+  height: auto;
+  width: 100%;
+  padding-bottom: 100%;
+  }
+  .block-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px 16px;    
+  }   
+  .column1 {
+  margin-right: 10px;  
+  flex: 1 66%;
+  max-width: 66%; 
+  }
+  .column2 {
+  flex: 0 1 32.61%;     
+  max-width: 32.61%;    
+  }
+  .df {
+  display: flex; 
+  margin-top: 10px;    
+  }   
+// header, footer style 
+header, footer {
+height: 90px;
+background-color: #c4c4c4;  
+display: flex;
+justify-content: center;
+align-items: center;  
+color: #000;
+font-size: 2rem;
+} 
+//section one style
+.one {  
+display: flex;
+justify-content: space-between;   
+color:$white; 
+&__left {  
+background-color:$gray;  
+padding: 30px;
+text-align: center;
+font-size: calc(15px + 3 * ((100vw - 480px) / (1280 - 320)));
+line-height: 1.2;
+}    
+&__block1, &__block2 {
+background-color:$gray;
+font-size: 1.2em;
+position: relative;}
+&__block1 {
+margin-bottom: 10px;    
+}
+}
+// start section two style
+.two {
+min-height: 318px;    
+&__right {
+display: flex; 
+flex-wrap: wrap; 
+}
+&__left {
+display: flex;
+justify-content: space-between;   
+flex-wrap: wrap; 
+}
+&__block1, &__block2 {
+background-color: $light-gray;
+display: flex;
+align-items: flex-end;
+padding: 15px 14px;
+flex: 0 1 calc(50% - 5px);
+height: calc((100% / 2) - 5px);
+}
+&__block3 {
+background-color: $light-gray;
+display: flex;
+align-items: flex-end;
+padding: 15px 14px;
+flex: 0 1 100%;    
+margin-top: 10px;
+height: calc((100% / 2) - 5px);
+}
+&__block4, &__block5 {
+background-color: $light-blue; 
+display: flex;
+align-items: flex-end; 
+flex: 0 1 100%;  
+padding: 15px 14px;
+height: calc((100% / 2) - 5px);
+}
+&__block5 {
+background-color: $yellow; 
+margin-top: 10px;
+}
+}
+//section four style
+.four {
+flex-direction: row-reverse;  
+&__left {
+background-color:$green-light;  
+margin:0 0 0 10px;  
+padding: 20px 13px;
+}  
+&__block1, &__block2 {
+background-color:$green-light;    
+position: relative;
+}
+&__block1 {
+margin-bottom: 10px;    
+}
+&__block2 > .block-content {
+padding: 0;
+}
+}
+.card {
+& p {
+display: flex;
+justify-content: space-between;  
+margin-bottom: 28px; 
+font-size: calc(11px + 4 * ((100vw - 480px) / (1280 - 320)));
+}   
+&__line {
+ display: block;
+border-bottom: 1px dotted black;
+flex: auto;
+margin: 0 3px;   
+} 
+}
+//section five style
+.five {
+min-height: 320px;    
+display: flex;
+flex-wrap: wrap;
+margin-top: 10px;
+margin-bottom: 10px;
+& div {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+padding: 15px 16px; 
+}
+&__block1 {
+background-color: $orange;
+flex: 0 1 32.61%;
+margin: 0 0 10px 0;
+}
+&__block2 {
+background-color: $orange;
+flex: 0 1 calc(100% - 32.61% - 10px);
+margin:0 0 10px 10px;
+}
+&__block3 {
+background-color: $red;
+flex: 0 1 32.61%
+}
+&__block4 {
+background-color: $orange;
+flex: 32.61%;
+margin-left: 10px;
+}
+&__block5 {
+background-color: $violet;
+flex: 0 1 calc(100% - 65.22% - 20px);
+margin-left: 10px;
+}
+}
+  /*# sourceMappingURL=style.css.map */
